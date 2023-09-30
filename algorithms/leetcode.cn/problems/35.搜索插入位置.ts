@@ -6,20 +6,18 @@
 
 // @lc code=start
 function searchInsert(nums: number[], target: number): number {
-    const l = nums.length;
-    let i = 0;
-    while(i < l) {
-        console.log('____ nums[i]', i, nums[i]);
-
-        if(nums[i] >= target) {
-            return i;
-        }
-        i++;
+  const l = nums.length;
+  let i = 0;
+  while (i < l) {
+    if (nums[i] >= target) {
+      return i;
     }
-    if(i >= l) {
-        return l;
-    }
-};
+    i++;
+  }
+  if (i >= l) {
+    return l;
+  }
+}
 // @lc code=end
-const r = searchInsert([1,3,5,6], 7);
-console.log('____', r);
+const r = searchInsert([1, 3, 5, 6], 7);
+console.log("____", r);
