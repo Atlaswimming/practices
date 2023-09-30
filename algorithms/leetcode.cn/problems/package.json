@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "test-tsc-version": "tsc -v",
+    "test-ts-node-version": "ts-node -v",
+    "tsc-init": "tsc --init"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "prettier": "3.0.3",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
